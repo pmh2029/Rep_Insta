@@ -1,4 +1,4 @@
-export const apiKey = 'AIzaSyB5Wa_mF5Rm5VbBSaAIzaSyARKOAQf42BF7DpWvKPfqLI34O7VV0_TqQ';
+export const apiKey = 'AIzaSyARKOAQf42BF7DpWvKPfqLI34O7VV0_TqQ';
 export const authDomain = 'jp-itss.firebaseapp.com';
 export const projectId = 'jp-itss';
 export const storageBucket = 'jp-itss.appspot.com';

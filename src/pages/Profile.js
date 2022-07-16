@@ -28,8 +28,9 @@ const Profile = () => {
             </Helmet>
             <div className="h-screen overflow-auto">
                 <Header />
-                {user && user.username && <UserProfile user={user} />}
+                {user && user.username && <UserProfile user={user}/>}
             </div>
+            
         </div>
     );
 };

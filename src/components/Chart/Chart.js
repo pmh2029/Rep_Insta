@@ -163,7 +163,14 @@ const BarChart = () => {
                     width={600}
                     options={{
                         maintainAspectRatio: false,
-                        animation: false
+                        animation: false,
+                        scales: {
+                            y: {
+                                ticks: {
+                                    precision: 0
+                                }
+                            }
+                        }
                     }}
                 />
             </div>

@@ -48,6 +48,15 @@ const Header = () => {
                     </form>
                 </div>
                 <div className="w-48 flex items-center ml-2 mr-2 space-x-2 justify-between cursor-pointer">
+                    <div className="h-8 w-8 rounded-full bg-gray-base">
+                        <Link to={`/${username}`}>
+                            <img
+                                src={photo || ' ./images/avatars/placeholder.png'}
+                                alt="user"
+                                className="h-8 w-8 rounded-full bg-gray-base"
+                            />
+                        </Link>
+                    </div>
                     <div>
                         <Link to="/">
                             {pathname === '/' ? SvgIcons.homeFill : SvgIcons.homeOutline}
@@ -58,19 +67,13 @@ const Header = () => {
                             {pathname === '/chat' ? SvgIcons.messageFill : SvgIcons.messageOutline}
                         </Link>
                     </div>
-                    <div>{SvgIcons.heartOutline}</div>
+                    <div>
+                        <Link className="cursor-pointer" to="/stat">
+                            {pathname === '/stat' ? SvgIcons.statFill : SvgIcons.statOutline}
+                        </Link>
+                    </div>
                     <div>
                         <FiLogOut className="cursor-pointer" size={22} onClick={logoutHandler} />
-                    </div>
-
-                    <div className="h-8 w-8 rounded-full bg-gray-base">
-                        <Link to={`/${username}`}>
-                            <img
-                                src={photo || ' ./images/avatars/placeholder.png'}
-                                alt="user"
-                                className="h-8 w-8 rounded-full bg-gray-base"
-                            />
-                        </Link>
                     </div>
                 </div>
             </div>

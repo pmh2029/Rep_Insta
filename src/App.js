@@ -9,6 +9,7 @@ import Dashboard from './pages/Dashboard';
 import EditProfile from './pages/EditProfile';
 import Explore from './pages/Explore';
 import Login from './pages/Login';
+import Stat from './pages/Stat';
 import NotFound from './pages/NotFound';
 import Profile from './pages/Profile';
 import Registration from './pages/Registration';
@@ -30,6 +31,9 @@ function App() {
                         <ProtectedRoute loggedInUser={loggedInUser} path="/edit">
                             <Route component={EditProfile} />
                         </ProtectedRoute>
+                        <ProtectedRoute loggedInUser={loggedInUser} path="/stat">
+                            <Route component={Stat} />
+                        </ProtectedRoute>
                         <ProtectedRoute loggedInUser={loggedInUser} path="/chat">
                             <Route component={ChatBoard} />
                         </ProtectedRoute>
@@ -39,6 +43,7 @@ function App() {
                         <ProtectedRoute loggedInUser={loggedInUser} path="/:username">
                             <Route component={Profile} />
                         </ProtectedRoute>
+                        
                     </Switch>
                 </Router>
             </div>

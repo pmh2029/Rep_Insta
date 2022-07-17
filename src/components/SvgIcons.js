@@ -51,7 +51,32 @@ const SvgIcons = {
             <path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z" />
         </svg>
     ),
-
+    statFill: (
+        <svg
+            aria-label="Direct"
+            className="_8-yf5 "
+            fill="#262626"
+            height="22"
+            role="img"
+            viewBox="0 0 48 48"
+            width="28"
+        >
+            <path d="M 10 50 L55 50 L55 20 L 40 20 L 40 50 L 40 10 L 25 10 L 25 50 L 25 30 L 10 30 z" />
+        </svg>
+    ),
+    statOutline: (
+        <svg
+            aria-label="Direct"
+            className="_8-yf5 "
+            fill="#262626"
+            height="22"
+            role="img"
+            viewBox="0 0 48 48"
+            width="28"
+        >
+            <path d="M 10 50 H55 V45 H10z M 10 45 V30 H15 V45 M 10 30 H25 V35 H10 z M20 35 V45 H25 V35 M25 45 V10 H30 V45 z M30 10 H35 V15 H30 Z M35 10 H40 V45 H35 Z M40 20 H45 V45 H40 Z M45 20 H50 V25 H45 Z M50 20 H55 V45 H50 Z  " />
+        </svg>
+    ),
     heartOutline: (
         <svg
             aria-label="Activity Feed"

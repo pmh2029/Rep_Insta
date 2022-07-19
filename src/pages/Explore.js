@@ -22,7 +22,7 @@ const Explore = () => {
     return (
         <div>
             <Helmet>
-                <title>Instagram - Explore Users</title>
+                <title>Connection - Explore Users</title>
             </Helmet>
             <div className="h-screen overflow-auto pb-16 flex-col">
                 <Header />

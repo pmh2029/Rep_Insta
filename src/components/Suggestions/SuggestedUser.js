@@ -37,7 +37,7 @@ const SuggestedUser = ({ user, loggedInDocId, loggedInUserUId }) => {
                             {username}
                         </Link>
                     </div>
-                    <div className="text-gray-base text-sm">New to instagram</div>
+                    <div className="text-gray-base text-sm">New to Connection</div>
                 </div>
             </div>
             <button

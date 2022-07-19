@@ -6,7 +6,7 @@ import Header from '../components/Header';
 const ChatBoard = () => (
     <div>
         <Helmet>
-            <title>Instagram | Chat</title>
+            <title>Connection | Chat</title>
         </Helmet>
         <div className="h-screen overflow-y-hidden">
             <Header />

@@ -32,7 +32,7 @@ const Header = () => {
                         <img
                             src="./images/logo.png"
                             className="w-32 px-2 sm:w-auto sm:h-8"
-                            alt="instagram-logo"
+                            alt="Connection-logo"
                         />
                     </Link>
                 </div>

@@ -30,7 +30,7 @@ const ExploreProfiles = ({ user, authUserUid, authUserDocId }) => {
                             {user.username}
                         </Link>
                     </div>
-                    <div>new to instagram</div>
+                    <div>new to Connection</div>
                 </div>
             </div>
             <button

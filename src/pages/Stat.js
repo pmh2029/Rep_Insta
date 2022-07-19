@@ -9,7 +9,7 @@ const Stat = () => {
     return (
         <div>
             <Helmet>
-                <title>Instagram | Stat</title>
+                <title>Connection | Stat</title>
             </Helmet>
             <div className="h-screen overflow-auto">
                 <Header />

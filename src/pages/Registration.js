@@ -59,7 +59,7 @@ const Registration = () => {
     return (
         <div>
             <Helmet>
-                <title>Instagram | Registration</title>
+                <title>Connection | Registration</title>
             </Helmet>
             <div className="container flex justify-center mx-auto items-center h-screen max-w-screen-md ">
                 <div className="w-3/5 hidden md:block">

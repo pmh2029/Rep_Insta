@@ -12,6 +12,7 @@ import Login from './pages/Login';
 import Stat from './pages/Stat';
 import NotFound from './pages/NotFound';
 import Profile from './pages/Profile';
+import AdminPage from './pages/Admin';
 import Registration from './pages/Registration';
 
 function App() {
@@ -39,6 +40,9 @@ function App() {
                         </ProtectedRoute>
                         <ProtectedRoute loggedInUser={loggedInUser} path="/explore">
                             <Route component={Explore} />
+                        </ProtectedRoute>
+                        <ProtectedRoute loggedInUser={loggedInUser} path="/admin">
+                            <Route component={AdminPage} />
                         </ProtectedRoute>
                         <ProtectedRoute loggedInUser={loggedInUser} path="/:username">
                             <Route component={Profile} />

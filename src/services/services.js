@@ -97,6 +97,33 @@ export const getUserByUserName = async (userName) => {
     return result;
 };
 
+export const getAllUsers = async () => {
+    const userRef = await fireStore.collection('users').get();
+    if (userRef.empty) {
+        return null;
+    }
+    const result = userRef.docs.map((item) => ({ ...item.data(), userDocId: item.id }))[0];
+    return result;
+};
+
+export const deleteUserByID = async (e) => {
+        e.preventDefault();
+        const users = await getAllUsers();
+
+
+        if (users) {
+            try {
+                const user = await getUserByUid()
+                const deletedUser = await fireStore.collection('users').doc(user).delete();
+                return deletedUser;
+            } catch (err) {
+                return(err.message);
+            }
+        } else {
+            return('Username already Exists! Try a different Username...');
+        }
+    };
+
 export const getUserPhotosByUId = async (userUId) => {
     const photosRef = await fireStore.collection('photos').where('userUId', '==', userUId).get();
     if (photosRef.empty) {

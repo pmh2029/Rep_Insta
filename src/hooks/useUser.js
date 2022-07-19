@@ -21,6 +21,7 @@ const useUser = (collection = 'users') => {
             });
         return unSub;
     }, [collection, uid]);
+    console.log(activeUser);
     return { user: activeUser };
 };
 
